@@ -19,9 +19,10 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dist-files
-          path: |
-            dist
-            packge.json
+          path: dist
+          #path: |
+          #  dist
+          #  packge.json
   build:
     needs: test
     runs-on: ubuntu-latest
